@@ -40,6 +40,7 @@
     "husky": "^4.2.5",
     "lint-staged": "^9.5.0",
     "mini-css-extract-plugin": "^0.9.0",
+    "prettier": "^2.0.5",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
@@ -64,7 +65,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,vue}": [
-      "vue-cli-service lint",
+      "prettier",
+      "eslint",
       "git add"
     ]
   }
