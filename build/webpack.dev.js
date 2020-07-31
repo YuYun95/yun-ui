@@ -41,11 +41,11 @@ module.exports = merge(common, {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ['vue-style-loader', 'css-loader']
       },
       {
         test: /\.scss/,
-        use: ['vue-style-loader', 'css-loader', 'sass-loader']
+        use: ['vue-style-loader', 'css-loader']
       },
       {
         test: /\.(png|jpg|jpeg|gif)$/,
